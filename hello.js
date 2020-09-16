@@ -2,6 +2,7 @@
 var http = require('http');
 var fs = require('fs');
 var url  = require('url');
+const PORT = process.env.PORT || 5000
 
 http.createServer(function(req, res){
 
@@ -25,7 +26,7 @@ filename = filename + ".html";
 	return res.end();
 });
 	//res.end('Hello World! My name is Nupur');
-}).listen(8080);
+}).listen(PORT);
 
 console.log("Server listner onn port 8080");
 
